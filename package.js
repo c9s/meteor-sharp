@@ -1,7 +1,7 @@
 Package.describe({
   name: 'c9s:sharp',
 
-  version: '0.16.2_2',
+  version: '0.16.2_3',
 
   // Brief, one-line summary of the package.
   summary: 'Adds bindings to the libvips image processing library',
@@ -19,7 +19,7 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.4.1.0');
+  api.versionsFrom('1.4.1.2');
   api.use('ecmascript');
   api.mainModule('sharp.js', 'server');
 });
