@@ -18,6 +18,7 @@ For sample use, see the
 
 ## Publishing Package
 
+    export METEOR_ALLOW_NON_PORTABLE=1
     meteor publish
 
     meteor admin get-machine os.linux.x86_64
