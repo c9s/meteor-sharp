@@ -1,3 +1,2 @@
-// Write your package code here!
-import sharp from 'sharp';
-export sharp;
+const sharp = require('sharp');
+module.exports = sharp;
