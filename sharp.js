@@ -1,2 +1,3 @@
 // Write your package code here!
-sharp = Npm.require('sharp');
+import sharp from 'sharp';
+export sharp;
