@@ -1,10 +1,14 @@
 Package.describe({
   name: 'c9s:sharp',
-  version: '0.16.2',
+
+  version: '0.16.2_2',
+
   // Brief, one-line summary of the package.
   summary: 'Adds bindings to the libvips image processing library',
+
   // URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/bdunnette/meteor-sharp.git',
+  git: 'https://github.com/c9s/meteor-sharp.git',
+
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -15,13 +19,15 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.4');
-  api.addFiles('sharp.js', 'server');
-  api.export('sharp');
+  api.versionsFrom('1.4.1.0');
+  api.use('ecmascript');
+  api.mainModule('sharp.js', 'server');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
+  api.use('ecmascript');
   api.use('c9s:sharp');
-  api.addFiles('sharp-tests.js');
+  api.addAssets('test.jpg', 'server');
+  api.mainModule('sharp-tests.js', 'server');
 });

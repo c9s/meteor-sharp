@@ -1,2 +1,1 @@
-const sharp = require('sharp');
-module.exports = sharp;
+module.exports = Npm.require('sharp');
