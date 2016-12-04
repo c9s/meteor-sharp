@@ -1,7 +1,7 @@
 Package.describe({
   name: 'c9s:sharp',
 
-  version: '0.16.2_5',
+  version: '0.16.2_6',
 
   // Brief, one-line summary of the package.
   summary: 'Adds bindings to the libvips image processing library',
